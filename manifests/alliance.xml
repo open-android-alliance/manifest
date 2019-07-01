@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <!-- Manifest -->
+  <project path="manifest" name="manifest" remote="oaa" groups="oaa" />
+
+  <!-- Frameworks -->
+  <remove-project name="platform/frameworks/base" />
+  <project path="frameworks/base" name="android_frameworks_base" remote="oaa" groups="oaa" />
+
+  <remove-project name="platform/packages/apps/Settings" />
+  <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="oaa" groups="oaa" />
+
+  <!-- Vendor -->
+  <project path="vendor/alliance" name="android_vendor_alliance" remote="oaa" groups="oaa"/>
+
+  <!-- Obsolete Packages -->
+  <remove-project name="device/generic/arm64"/>
+  <remove-project name="device/generic/armv7-a-neon"/>
+  <remove-project name="device/generic/common"/>
+  <remove-project name="device/generic/goldfish"/>
+  <remove-project name="device/generic/mini-emulator-arm64"/>
+  <remove-project name="device/generic/mini-emulator-armv7-a-neon"/>
+  <remove-project name="device/generic/mini-emulator-x86"/>
+  <remove-project name="device/generic/mini-emulator-x86_64"/>
+  <remove-project name="device/generic/qemu"/>
+  <remove-project name="device/generic/x86"/>
+  <remove-project name="device/sample"/>
+  <remove-project name="device/generic/x86_64"/>
+  <remove-project name="device/generic/goldfish-opengl"/>
+</manifest>
